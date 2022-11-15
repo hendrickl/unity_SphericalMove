@@ -1,0 +1,86 @@
+# =============== #
+# Unity generated #
+# =============== #
+[Tt]emp/
+[Oo]bj/
+[Bb]uild
+[Ll]ibrary/**
+sysinfo.txt
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln*
+*.user
+*.unityproj
+*.booproj
+*.idea
+
+# =========== #
+# Editor DLLs #
+# =========== #
+
+ 
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+*.unitypackage
+orocos.log
+
+
+# ================ #
+# Project Specific #
+# ================ #
+
+# Ignore the data folder
+Assets/3DModels.meta
+Assets/3DPointClouds.meta
+Assets/ImportedMedias.meta
+Assets/ImportedMedias/**
+Assets/3DModels/**
+Assets/Plugins/PixyzPluginForUnity/**
+Assets/Plugins/PixyzPluginForUnity.meta
+Assets/3DPointClouds/**
+Assets/Notes/**
+Assets/Notes.meta
+Documentation/doc
+Assets/Screenshots/**
+Assets/Screenshots.meta
+Packages/packages-lock.json
+
+# =================== #
+# Pointcloud database #
+# =================== #
+
+/*.db
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+/*.userprefs
+/*.csproj
+/*.pidb
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+/.vs/
+/.vscode/
+
+# ================ #
+# Python generated #
+# ================ #
+*.pyc
