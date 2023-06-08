@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 7645765272504768020}
   - component: {fileID: 7645765272504768021}
   - component: {fileID: 7645765272504768018}
-  - component: {fileID: 6894774262244604349}
+  - component: {fileID: 8988296147135099806}
   m_Layer: 0
   m_Name: Cube
   m_TagString: ColoredCube
@@ -116,16 +116,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6894774262244604349
-MonoBehaviour:
+--- !u!65 &8988296147135099806
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7645765272504768016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a32bea4a351a4816a0c8cce53ebd60e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

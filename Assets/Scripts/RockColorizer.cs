@@ -2,25 +2,21 @@ using UnityEngine;
 
 public class RockColorizer : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject _player;
-
-    private void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        _player = GameObject.Find("Player");
+        if (other.gameObject.CompareTag("ColoredCube"))
+        {
+            Debug.Log("OntriggerENTER detected");
+            other.gameObject.GetComponent<Renderer>().material.color = Color.black;
+        }
     }
 
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        if (transform.position.x > _player.transform.position.x)
+        if (other.gameObject.CompareTag("ColoredCube"))
         {
-            GetComponent<Renderer>().material.color = Color.white;
-            Debug.Log("White");
-        }
-        else if (transform.position.x < _player.transform.position.x)
-        {
-            GetComponent<Renderer>().material.color = Color.black;
-            Debug.Log("Black");
+            Debug.Log("OntriggerEXIT detected");
+            other.gameObject.GetComponent<Renderer>().material.color = Color.white;
         }
     }
 }
