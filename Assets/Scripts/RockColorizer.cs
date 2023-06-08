@@ -19,6 +19,7 @@ public class RockColorizer : MonoBehaviour
         }
     }
 
+    // Detects when a rock enters the trigger zone and changes its color to black
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("ColoredCube"))
@@ -30,6 +31,7 @@ public class RockColorizer : MonoBehaviour
         ComputeNumberOfBlackRocks();
     }
 
+    // Detects when a rock exits the trigger zone and changes its color to white
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("ColoredCube"))
@@ -41,6 +43,7 @@ public class RockColorizer : MonoBehaviour
         ComputeNumberOfBlackRocks();
     }
 
+    // Counts the number of white rocks
     public int ComputeNumberOfWhiteRocks()
     {
         numberOfWhiteRocks = 0;
@@ -58,6 +61,7 @@ public class RockColorizer : MonoBehaviour
         return numberOfWhiteRocks;
     }
 
+    // Counts the number of black rocks
     public int ComputeNumberOfBlackRocks()
     {
         numberOfBlackRocks = 0;

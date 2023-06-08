@@ -27,6 +27,7 @@ public class RockStatistics : MonoBehaviour
         m_rightResult.text = p_stats.right.ToString();
     }
 
+    // Displays the number of white and black rocks in the UI
     private void DisplayStatistics()
     {
         m_leftResult.text = RockColorizer.instance.numberOfBlackRocks.ToString();

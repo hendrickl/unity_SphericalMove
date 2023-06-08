@@ -3,13 +3,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private float _rotationSpeed = 15f;
+    private float _rotationSpeed = 23f;
 
     [SerializeField]
-    private float _moveSpeed = 1f;
+    private float _moveSpeed = 15f;
 
     private void Update()
     {
+        // Vertical Movement
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Rotate(-Vector3.up, _rotationSpeed * Time.deltaTime);
@@ -19,7 +20,7 @@ public class PlayerController : MonoBehaviour
             transform.Rotate(Vector3.up, _rotationSpeed * Time.deltaTime);
         }
 
-
+        // Horizontal Movement
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.RotateAround(Vector3.zero, transform.right, _moveSpeed * Time.deltaTime);
