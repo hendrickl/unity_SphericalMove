@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        // Vertical Movement
+        // Rotation
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Rotate(-Vector3.up, _rotationSpeed * Time.deltaTime);
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
             transform.Rotate(Vector3.up, _rotationSpeed * Time.deltaTime);
         }
 
-        // Horizontal Movement
+        // Vertical Movement
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.RotateAround(Vector3.zero, transform.right, _moveSpeed * Time.deltaTime);

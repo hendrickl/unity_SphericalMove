@@ -19,6 +19,12 @@ public class RockColorizer : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        ComputeNumberOfWhiteRocks();
+        ComputeNumberOfBlackRocks();
+    }
+
     // Detects when a rock enters the trigger zone and changes its color to black
     private void OnTriggerEnter(Collider other)
     {
@@ -27,8 +33,6 @@ public class RockColorizer : MonoBehaviour
             Debug.Log("OntriggerENTER detected");
             other.gameObject.GetComponent<Renderer>().material.color = Color.black;
         }
-        ComputeNumberOfWhiteRocks();
-        ComputeNumberOfBlackRocks();
     }
 
     // Detects when a rock exits the trigger zone and changes its color to white
@@ -39,8 +43,6 @@ public class RockColorizer : MonoBehaviour
             Debug.Log("OntriggerEXIT detected");
             other.gameObject.GetComponent<Renderer>().material.color = Color.white;
         }
-        ComputeNumberOfWhiteRocks();
-        ComputeNumberOfBlackRocks();
     }
 
     // Counts the number of white rocks
